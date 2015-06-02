@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>F1</title>
+		<style>
+			p{
+				color: blue;
+			 }
+		</style>
+	
+	<body>
+		<p>Guess a number between one and ten</p>
+		<input id="guess"/>
+		<button onclick='clicked'>Guess</button>
+		<p id='result'></p>
+
+		<script>
+
+			var answer = Math.random() * ;
+
+			function clicked () {
+				var guess = document.getElementById('guess');
+				var result = document.getElementById('result');
+				if(guess.value == answer) {
+
+					console.log( 'You got it')
+				}
+				else if (guess.value <answer) {
+					console.log( "Nope! Aim higher.")
+					}
+				else {
+					console.log( "Down here")
+				}
+				}
+		</script>
+		
+	</body>
+</html>
+

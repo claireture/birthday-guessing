@@ -1,0 +1,41 @@
+<html>
+<head>
+		<title>Birthday Guess</title>
+			<style> 
+			p {
+				border: 2px solid green;
+				background-color: #336666;
+				color: #FFCC99;
+				text-align: center;
+				height: 75%;
+
+			}
+		</style>
+		<script>
+			nextBirthday = 34;
+			function whichBDay(numBDays) {
+				if (numBDays == nextBirthday) {
+					alert("You might be right, good guess")
+				}
+
+				else if (numBDays > nextBirthday){
+					alert("Nope, I'm not approaching that respectable age quite yet")
+				}
+
+				else if (numBDays < nextBirthday) {
+					alert("Flattering though that number is, guess again and higher")
+				}
+				else {
+					alert("That's really interesting...but what does it have to do with birthdays?")
+				}
+			}
+		</script>
+</head>
+<body>
+	<p>Which birthday do you have coming up?</p>
+		<form method="POST" name="bDayForm" onSubmit="whichBDay(document.bDayForm.numBDays.value);">
+			<input type="text" name="numBDays" id="numBDays" />
+			<input type="Submit" name="Submit" />
+		</form>
+</body>
+</html>
